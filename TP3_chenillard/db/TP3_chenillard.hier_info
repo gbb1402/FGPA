@@ -1,0 +1,97 @@
+|toplevel
+CLOCK_50_B6A => clock_divider:divider_inst.CLKin
+KEY[0] => clock_divider:divider_inst.RST
+KEY[0] => chenillard:chenillard_inst.RST
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+LEDR[0] << chenillard:chenillard_inst.CHEN[0]
+LEDR[1] << chenillard:chenillard_inst.CHEN[1]
+LEDR[2] << chenillard:chenillard_inst.CHEN[2]
+LEDR[3] << chenillard:chenillard_inst.CHEN[3]
+LEDR[4] << chenillard:chenillard_inst.CHEN[4]
+LEDR[5] << chenillard:chenillard_inst.CHEN[5]
+LEDR[6] << chenillard:chenillard_inst.CHEN[6]
+LEDR[7] << chenillard:chenillard_inst.CHEN[7]
+LEDR[8] << chenillard:chenillard_inst.CHEN[8]
+LEDR[9] << chenillard:chenillard_inst.CHEN[9]
+
+
+|toplevel|clock_divider:divider_inst
+CLKin => counter[0].CLK
+CLKin => counter[1].CLK
+CLKin => counter[2].CLK
+CLKin => counter[3].CLK
+CLKin => counter[4].CLK
+CLKin => counter[5].CLK
+CLKin => counter[6].CLK
+CLKin => counter[7].CLK
+CLKin => counter[8].CLK
+CLKin => counter[9].CLK
+CLKin => counter[10].CLK
+CLKin => counter[11].CLK
+CLKin => counter[12].CLK
+CLKin => counter[13].CLK
+CLKin => counter[14].CLK
+CLKin => counter[15].CLK
+CLKin => counter[16].CLK
+CLKin => counter[17].CLK
+CLKin => counter[18].CLK
+CLKin => counter[19].CLK
+CLKin => counter[20].CLK
+CLKin => counter[21].CLK
+CLKin => counter[22].CLK
+CLKin => counter[23].CLK
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+RST => counter.OUTPUTSELECT
+N[0] => Mux0.IN12
+N[1] => Mux0.IN11
+N[2] => Mux0.IN10
+N[3] => Mux0.IN9
+N[4] => Mux0.IN8
+CLKout <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|chenillard:chenillard_inst
+CLK => state[0].CLK
+CLK => state[1].CLK
+CLK => state[2].CLK
+CLK => state[3].CLK
+RST => state.OUTPUTSELECT
+RST => state.OUTPUTSELECT
+RST => state.OUTPUTSELECT
+RST => state.OUTPUTSELECT
+CHEN[0] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+CHEN[1] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+CHEN[2] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+CHEN[3] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+CHEN[4] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+CHEN[5] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+CHEN[6] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+CHEN[7] <= state[2].DB_MAX_OUTPUT_PORT_TYPE
+CHEN[8] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+CHEN[9] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

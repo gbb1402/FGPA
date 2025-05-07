@@ -1,0 +1,43 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity toplevel is
+    port (
+        CLOCK_50_B6A : in  std_logic;                      -- Horloge 50 MHz
+        KEY          : in  std_logic_vector(3 downto 0);   -- Boutons (actifs bas)
+        LEDG         : out std_logic_vector(7 downto 0)    -- LEDs vertes
+    );
+end entity;
+
+architecture Structural of toplevel is
+
+    component bistable_deux_process
+        port (
+            CLK : in  std_logic;
+            RST : in  std_logic;
+            X   : in  std_logic;
+            Y   : out std_logic
+        );
+    end component;
+
+    signal Y_signal : std_logic;
+
+begin
+
+    -- Instanciation de la FSM
+    fsm_inst : bistable_deux_process
+        port map (
+            CLK => CLOCK_50_B6A,
+            RST => KEY(0),     -- Reset actif bas
+            X   => not KEY(1), -- Bouton poussoir (inversé car actif bas)
+            Y   => Y_signal
+        );
+
+    -- Affichage de Y sur LEDG(0)
+    LEDG(0) <= Y_signal;
+
+    -- LEDs inutilisées éteintes
+    LEDG(7 downto 1) <= (others => '0');
+
+end architecture;

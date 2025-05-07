@@ -1,0 +1,175 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/CycloneVGX/TP1_additionneur/simulation/questa
+Efull_adder
+Z1 w1745305880
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8C:/CycloneVGX/TP1_additionneur/full_adder.vhd
+Z5 FC:/CycloneVGX/TP1_additionneur/full_adder.vhd
+l0
+L5 1
+V5e>g?7`@cOdNAfZb7HFTE3
+!s100 Z>Vo5N:m3<;?>h5f1CnOK2
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1745840883
+!i10b 1
+Z8 !s108 1745840883.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/CycloneVGX/TP1_additionneur/full_adder.vhd|
+Z10 !s107 C:/CycloneVGX/TP1_additionneur/full_adder.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Astructural
+R2
+R3
+DEx4 work 10 full_adder 0 22 5e>g?7`@cOdNAfZb7HFTE3
+!i122 1
+l31
+L16 39
+VZOzz4ajMA7GaEO1o5o;f?3
+!s100 4Va>^<zzZh<=SBQN<B?_o0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Efull_adder_4b
+Z13 w1745316328
+R2
+R3
+!i122 0
+R0
+Z14 8C:/CycloneVGX/TP1_additionneur/full_adder_4b.vhd
+Z15 FC:/CycloneVGX/TP1_additionneur/full_adder_4b.vhd
+l0
+L25 1
+Vh<;SIPeVIDDkEli^OkYh>2
+!s100 mTTTk_CXBRE]JNZio]PQ?3
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/CycloneVGX/TP1_additionneur/full_adder_4b.vhd|
+Z17 !s107 C:/CycloneVGX/TP1_additionneur/full_adder_4b.vhd|
+!i113 1
+R11
+R12
+Abdf_type
+R2
+R3
+DEx4 work 13 full_adder_4b 0 22 h<;SIPeVIDDkEli^OkYh>2
+!i122 0
+l53
+L36 55
+V9UkBZ1FZWR1H<OLIFeQGO3
+!s100 bZC?bd4o2>M[?W[eMTX>61
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Ehalf_adder
+Z18 w1744723128
+R2
+R3
+!i122 2
+R0
+Z19 8C:/CycloneVGX/TP1_additionneur/half_adder.vhd
+Z20 FC:/CycloneVGX/TP1_additionneur/half_adder.vhd
+l0
+L5 1
+V1JJ90C0z[@e9C4`gJ414=0
+!s100 L`1hPh@iBfjlQG41Bh;M[2
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/CycloneVGX/TP1_additionneur/half_adder.vhd|
+Z22 !s107 C:/CycloneVGX/TP1_additionneur/half_adder.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 10 half_adder 0 22 1JJ90C0z[@e9C4`gJ414=0
+!i122 2
+l16
+L15 5
+VL7=PG^N^Vo5X;9Bc;l>[H1
+!s100 =P0O<fmzQfdgMzOB`_X6g2
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Etb_full_adder
+Z23 w1745306003
+R2
+R3
+!i122 3
+R0
+Z24 8C:/CycloneVGX/TP1_additionneur/tb_full_adder.vhd
+Z25 FC:/CycloneVGX/TP1_additionneur/tb_full_adder.vhd
+l0
+L5 1
+V2Y3D0N`fUCE`zf`;UMdmE0
+!s100 5R:XXoaJFzbCIOl33Q`7J2
+R6
+31
+R7
+!i10b 1
+R8
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/CycloneVGX/TP1_additionneur/tb_full_adder.vhd|
+!s107 C:/CycloneVGX/TP1_additionneur/tb_full_adder.vhd|
+!i113 1
+R11
+R12
+Asim
+R2
+R3
+DEx4 work 13 tb_full_adder 0 22 2Y3D0N`fUCE`zf`;UMdmE0
+!i122 3
+l25
+L8 69
+VD_PfNHT0N?2>B4T?1[Elm2
+!s100 [e>z5]Z4LjIK4?B`YKa2z0
+R6
+31
+R7
+!i10b 1
+R8
+R26
+Z27 !s107 C:/CycloneVGX/TP1_additionneur/tb_full_adder.vhd|
+!i113 1
+R11
+R12
